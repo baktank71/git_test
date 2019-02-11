@@ -45,10 +45,10 @@ public class HomeController {
   return model;
  }
  
- @RequestMapping(value = "/loadCityByCountry", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
- public @ResponseBody List<City> loadCityByCountry(@RequestBody CountryCriteria countryCriteria) {
-  List<City> cities = cityService.getCitiesByCountry(countryCriteria.getCountryId());
-  
-  return cities;
- }
+// @RequestMapping(value = "/loadCityByCountry", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+// public @ResponseBody List<City> loadCityByCountry(@RequestBody CountryCriteria countryCriteria) {
+//  List<City> cities = cityService.getCitiesByCountry(countryCriteria.getCountryId());
+//  
+//  return cities;
+// }
 }
